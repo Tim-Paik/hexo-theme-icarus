@@ -36,6 +36,7 @@ $title-weight ?= $weight-normal
 $control-height ?= 2.25em
 $button-padding-vertical ?= calc(0.375em - 1px)
 
+$radius = 0.75rem
 $card-radius ?= $radius
 $card-media-margin ?= 0.75rem
 $card-shadow ?= $shadow, 0 0 1px rgba(0, 0, 0, 0.1)
@@ -79,6 +80,12 @@ body
 
 body > .section
     flex-grow: 1
+
+.section
+    padding: 2rem 1.5rem
+
+.card-content
+    padding: 2rem
 
 +desktop()
     ::-webkit-scrollbar
